@@ -1,0 +1,62 @@
+............ SHELL BASICS...............
+
+Touch : to create 0 byte files
+
+Shell is used to give o/p from user input(eg:keyboard). Which works as secondary interactive kernal using bash
+
+
+We can do tricky codes using shell as follows
+
+Lets say we have folders like a, ab,abc,abcd.bcs,bcd,bbc etc
+
+   : echo a*   ---> gives the o/p all folders starting with a (NOTE: *is meta charecter)
+
+   : echo "a*"....> same o/p
+
+   : echo 'a*'----> a*
+
+   : echo a*c .....> folders starting with a and ending with c
+
+
+
+---------Redirection----------
+
+The rediection command > will works only for std.i/p not to error messages
+
+But we can store errors using number notations.
+
+: no.0 : std input
+: no.1: std o/p
+: no.2 : std error
+
+
+
+Values assigned in kernal cannot be accessed in bash, but it can be done after exporting the folder.
+
+: a = 1
+: $a = 1
+
+: bash
+: $a = a
+
+:export a
+:bash
+:$a = 1
+
+
+
+
+
+
+
+
+(echo $a)
+
+
+
+
+
+
+
+
+

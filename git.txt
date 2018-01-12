@@ -1,0 +1,45 @@
+
+GIT Commands to remember
+
+:git config --global user.name "user name"
+:git config --global user.email"email"
+
+(line 4 and 5 should run one time)
+
+Initialization : git init 
+
+(we must see ....  .git file if we runs ls -a)
+
+Adding: git add "file name"
+commiting : git commit -m "commit message"
+for all details: git log
+
+creating branch: git checkout -b "file name"
+to check : git branch
+         : git master
+
+merging : git merge "name"
+
+
+
+            -----GIT HUB SSH KEYGEN (one time process)
+
+First we have to generate ssh key from terminal by putting our Github UN. The generated key should be linked to github(under profile/ssh). commands to do this as follows
+
+ : ssh-keygen -t rsa -"github un"
+cd to folder .ssh : cd .ssh/
+cd to rsa public: cd rsa_public
+
+verification: ssh -T git@github.com 
+
+
+
+
+
+
+
+
+
+
+
+
